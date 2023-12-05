@@ -1,11 +1,9 @@
 <template>
-  <header class="project-container">
-    <h2 class="text-primaryColor text-xl font-bold">Hello world</h2>
-  </header>
-
+  <sidebar/>
+  <router-view/>
 </template>
 <script setup>
-
+import Sidebar from './components/Sidebar.vue'
 </script>
 
 
