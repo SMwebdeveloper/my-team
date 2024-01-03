@@ -9,12 +9,15 @@ module.exports = {
       colors: {
         primaryColor: '#014e56',
         primaryLight: '#f67e7e',
-        white: '#fff',
+        whiteColor: '#fff',
         raptureBlue: '#79cbc7',
         policeBlue: '#2c6269',
         deepJungleGreen: '#004047',
         sacramento: '#012f34',
         darkGreen: '#002529'
+      },
+      backgroundImage: {
+        'aboutImage7': "url('@/assets/images/svg/about-icon-7.svg')"
       }
     },
     
