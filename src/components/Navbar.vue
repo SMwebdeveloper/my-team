@@ -13,9 +13,9 @@
       </button>
 
       <!-- Navigation -->
-      <div class=" md:inline-block " :class="`${sidebar ? 'flex fixed top-0 left-0 w-screen h-screen bg-[rgba(0,0,0,0.50)] transition-all duration-150' : 'hidden static  bg-transparent w-[90%]'}`">
+      <div class="fixed z-20 top-0 left-0 w-full h-full transition-all duration-400  md:relative md:w-[90%] md:bg-transparent " :class="`${ sidebar ? 'visible bg-[rgba(0,0,0,0.50)]' : 'invisible'}`">
         <div
-        class="absolute md:static top-0  md:w-full h-full z-20 bg-policeBlue md:bg-transparent flex flex-col md:flex-row md:items-center md:justify-between w-[255px]  pt-5 md:pt-0 px-8 md:px-0  lg:right-[0] transition-all duration-300 before:absolute before:right-0 before:bottom-0 before:h-[200px] before:w-24 before:bg-aboutImage7 md:before:hidden" :class="`${sidebar ? 'right-0 transition-all duration-300' : 'right-[-100%]'}`"
+        class="absolute md:static top-0  right-0 transform translate-x-[255px] transition-all duration-300 delay-100 ease-in-out md:-translate-x-0 md:w-full h-full z-20 bg-policeBlue md:bg-transparent flex flex-col md:flex-row md:items-center md:justify-between w-[255px]  pt-5 md:pt-0 px-8 md:px-0  lg:right-[0] before:absolute before:right-0 before:bottom-0 before:h-[200px] before:w-24 before:bg-aboutImage7 md:before:hidden" :class="{'-translate-x-[0]' : sidebar}"
       >
         <button @click="sidebar = !sidebar" class="text-whiteColor ml-auto text-3xl font-medium md:hidden mb-10">
           &times;
