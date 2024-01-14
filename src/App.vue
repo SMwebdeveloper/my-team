@@ -1,12 +1,11 @@
 <template>
-  <sidebar/>
-  <router-view/>
+  <navbar />
+  <router-view />
+  <app-footer/>
 </template>
 <script setup>
-import Sidebar from './components/Sidebar.vue'
+import Navbar from "./components/Navbar.vue";
+import AppFooter from "./components/AppFooter.vue";
 </script>
 
-
-<style scoped>
-
-</style>
+<style scoped></style>
