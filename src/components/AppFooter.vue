@@ -4,7 +4,7 @@
       <div class="w-auto md:w-1/2 lg:w-auto md:mr-36 mb-4 md:mb-0">
         <img src="@/assets/images/svg/logo.svg" alt="site logo" class="mb-4 md:mb-6 w-24 md:w-40 mx-auto md:mx-0 md:mr-auto"/>
         <nav
-          class="flex items-center justify-center sm:justify-start md:flex-1 text-whiteColor text-[18px] font-semibold"
+          class="flex items-center justify-center sm:justify-start md:flex-1 text-white text-[18px] font-semibold"
         >
           <a>
             <router-link

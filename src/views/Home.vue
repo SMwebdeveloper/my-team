@@ -1,5 +1,8 @@
 <template>
-    <div class="project-container">
-        <h2>Home page</h2>
+    <div>
+        <home-hero/>
     </div>
 </template>
+<script setup>
+import HomeHero from '../components/HomeHero.vue';
+</script>

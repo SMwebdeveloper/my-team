@@ -9,7 +9,6 @@ module.exports = {
       colors: {
         primaryColor: '#014e56',
         primaryLight: '#f67e7e',
-        whiteColor: '#fff',
         raptureBlue: '#79cbc7',
         policeBlue: '#2c6269',
         deepJungleGreen: '#004047',
@@ -17,7 +16,9 @@ module.exports = {
         darkGreen: '#002529'
       },
       backgroundImage: {
-        'aboutImage7': "url('@/assets/images/svg/about-icon-7.svg')"
+        'aboutImage7': "url('@/assets/images/svg/about-icon-7.svg')",
+        'headerCircle': "url('@/assets/images/svg/header-circle.svg')",
+        'headerCircle2': "url('@/assets/images/svg/header-circle-2.svg')"
       }
     },
     
