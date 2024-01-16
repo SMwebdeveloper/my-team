@@ -18,7 +18,8 @@ module.exports = {
       backgroundImage: {
         'aboutImage7': "url('@/assets/images/svg/about-icon-7.svg')",
         'headerCircle': "url('@/assets/images/svg/header-circle.svg')",
-        'headerCircle2': "url('@/assets/images/svg/header-circle-2.svg')"
+        'headerCircle2': "url('@/assets/images/svg/header-circle-2.svg')",
+        'aboutIcon9': "url('@/assets/images/svg/about-icon-9.svg')",
       }
     },
     

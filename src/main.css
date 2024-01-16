@@ -1,20 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{ 
-    font-family: 'Livvic', sans-serif;
+body {
+  font-family: "Livvic", sans-serif;
+  overflow-x: hidden;
 }
 
-.project-container{ 
-    @apply max-w-[1220px] px-5 md:px-7 lg:px-12 mx-auto;
+.project-container {
+  @apply max-w-[1220px] px-5 md:px-7 lg:px-12 mx-auto;
+}
+
+.header-title {
+  @apply text-[40px] md:text-6xl lg:text-8xl leading-10 md:leading-[56px] lg:leading-[100px] text-white font-bold text-center lg:text-left;
+}
+.header-subtitle {
+  @apply text-base text-white lg:text-lg font-semibold text-center lg:text-left;
+}
+.second-title {
+    @apply text-[32px] lg:text-5xl font-bold  leading-[32px] text-white
 }
