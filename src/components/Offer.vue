@@ -12,7 +12,7 @@
           <img src="@/assets/images/cards/cards-1.png" alt="card first image" class="w-[72px] h-[72px] mb-4 md:mb-0 md:mr-6"/>
           <div>
             <h4 class="text-[18px] font-bold text-primaryLight mb-2 md:mb-4 leading-7">Experienced Individuals</h4>
-            <p class="text-base text-white font-semibold leading-6 w-full md:max-w-[478px] lg:-w-[445px]">
+            <p class="description w-full md:max-w-[478px] lg:-w-[445px]">
               Our network is made up of highly experienced professionals who are
               passionate about what they do.
             </p>
@@ -26,7 +26,7 @@
           />
           <div>
             <h4 class="text-[18px] font-bold text-primaryLight mb-2 md:mb-4 leading-7">Easy to Implement</h4>
-            <p class="text-base text-white font-semibold leading-6 w-full md:max-w-[478px] lg:w-[445px]">
+            <p class="description w-full md:max-w-[478px] lg:w-[445px]">
               Our processes have been refined over years of implementation
               meaning our teams always deliver.
             </p>
@@ -36,7 +36,7 @@
           <img src="@/assets/images/cards/cards-3.png" alt="card third image" class="w-[72px] h-[72px] mb-4 md:mb-0 md:mr-6"/>
           <div>
             <h4 class="text-[18px] font-bold text-primaryLight mb-2 md:mb-4 leading-7">Enhanced Productivity</h4>
-            <p class="text-base text-white font-semibold leading-6 w-full md:max-w-[478px] lg:w-[445px]">
+            <p class="description w-full md:max-w-[478px] lg:w-[445px]">
               Our customized platform with in-built analytics helps you manage
               your distributed teams.
             </p>

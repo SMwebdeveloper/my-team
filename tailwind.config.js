@@ -20,6 +20,9 @@ module.exports = {
         'headerCircle': "url('@/assets/images/svg/header-circle.svg')",
         'headerCircle2': "url('@/assets/images/svg/header-circle-2.svg')",
         'aboutIcon9': "url('@/assets/images/svg/about-icon-9.svg')",
+        'iconQuotes': "url('@/assets/images/cards/icon-quotes.png')",
+        'aboutIcon2': "url('@/assets/images/svg/about-icon-2.svg')",
+        'aboutIcon3': "url('@/assets/images/svg/about-icon-3.svg')",
       }
     },
     

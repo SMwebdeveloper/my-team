@@ -28,3 +28,7 @@ body {
 .second-title {
     @apply text-[32px] lg:text-5xl font-bold  leading-[32px] text-white
 }
+
+.description {
+    @apply text-base text-white font-semibold leading-6
+}
