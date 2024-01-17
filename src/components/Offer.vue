@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-darkGreen py-16 md:py-24 lg:py-36">
-    <div class="project-container relative md:pl-24 flex flex-col lg:flex-row items-start justify-between before:absolute before:top-[-65px] before:md:top-[-95px] before:lg:top-auto before:right-0 before:lg:right-[-72px] before:lg:bottom-[-39%] before:w-[100px] before:h-[244px] before:bg-aboutIcon9 before:bg-no-repeat">
+  <section class="bg-darkGreen py-16 md:py-24 lg:py-36 relative before:absolute before:top-0 before:lg:top-auto before:right-0 before:lg:right-0 before:lg:bottom-0 before:w-[100px] before:h-[244px] before:bg-aboutIcon9 before:bg-no-repeat">
+    <div class="project-container  md:pl-24 flex flex-col lg:flex-row items-start justify-between ">
       <div class="mb-14 md:mb-16 lg:mb-0">
         <span class="inline-block bg-primaryLight w-12 h-1 mb-8 lg:mb-14"></span>
         <h2 class="second-title w-[230px] sm:w-[270px] md:w-[445px]">

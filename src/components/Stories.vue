@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-primaryColor pb-40 pt-[140px] md:py-[100px] lg:py-[140px]">
-    <div class="project-container relative before:absolute before:top-[-140px] before:md:top-[-100px] before:lg:top-[-31%] before:left-0 before:lg:left-[-70px] before:w-[147px] before:h-[100px] before:bg-aboutIcon2 before:bg-no-repeat after:absolute after:bottom-[-260px] after:md:bottom-[-200px] after:lg:bottom-[-240px] after:right-0 after:lg:right-[-6%] after:w-[200px] after:h-[200px] after:bg-aboutIcon3 after:bg-no-repeat">
+  <section class="bg-primaryColor pb-40 pt-[140px] md:py-[100px] lg:py-[140px] relative before:absolute before:top-0  before:left-0  before:w-[147px] before:h-[100px] before:bg-aboutIcon2 before:bg-no-repeat after:absolute after:bottom-[-100px] after:right-0 after:w-[200px] after:h-[200px] after:bg-aboutIcon3 after:bg-no-repeat">
+    <div class="project-container ">
       <h2
         class="second-title w-[327px] md:w-[573px] lg:w-[932px] mb-12 lg:mb-14 mx-auto text-center"
       >
