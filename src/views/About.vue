@@ -1,5 +1,8 @@
 <template>
-    <div class="project-container">
-       <h2>Hello world</h2>
+    <div>
+      <about/>
     </div>
 </template>
+<script setup>
+import About from '../components/About.vue';
+</script>

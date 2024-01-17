@@ -25,6 +25,7 @@
         >
           <a>
             <router-link
+              @click="sidebar = false"
               to="/"
               class="mr-3 duration-200 hover:text-primaryLight inline-block mb-6 md:mb-0"
               >home</router-link
@@ -32,6 +33,7 @@
           </a>
           <a>
             <router-link
+            @click="sidebar = false"
               to="/about"
               class="duration-200 hover:text-primaryLight"
               >about</router-link
@@ -41,6 +43,7 @@
 
         <a>
           <router-link
+          @click="sidebar = false"
             to="/contact"
             class="text-white text-center text-[18px] border-2 px-8 py-2 rounded-full duration-200 hover:text-primaryColor hover:bg-white font-semibold"
             >contact</router-link

@@ -23,7 +23,8 @@ module.exports = {
         'iconQuotes': "url('@/assets/images/cards/icon-quotes.png')",
         'aboutIcon2': "url('@/assets/images/svg/about-icon-2.svg')",
         'aboutIcon3': "url('@/assets/images/svg/about-icon-3.svg')",
-        'aboutIcon4': "url('@/assets/images/svg/about-icon-4.svg')"
+        'aboutIcon4': "url('@/assets/images/svg/about-icon-4.svg')",
+        'aboutIcon7': "url('@/assets/images/svg/about-icon-7.svg')",
       }
     },
     
