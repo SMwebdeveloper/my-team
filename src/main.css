@@ -27,9 +27,9 @@ body {
   @apply text-base text-white lg:text-lg font-semibold text-center lg:text-left;
 }
 .second-title {
-    @apply text-[32px] lg:text-5xl font-bold  leading-[32px] text-white
+  @apply text-[32px] lg:text-5xl font-bold  leading-[32px] text-white;
 }
 
 .description {
-    @apply text-base text-white font-semibold leading-6
+  @apply text-base text-white font-semibold leading-6;
 }

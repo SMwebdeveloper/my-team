@@ -4,7 +4,7 @@
             <h2 class="text-[40px] md:text-[64px] font-bold leading-10 md:leading-[56px] lg:leading-[100px] text-white mb-4 md:mb-6 lg:mb-0">About</h2>
             <div>
                 <span class="hidden lg:inline-block bg-primaryLight w-12 h-1 mb-8 lg:mb-14"></span>
-                <p class="header-subtitle max-w-[457px] lg:w-[730px] text-center lg:text-left">We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p>
+                <p class="header-subtitle max-w-[457px] lg:max-w-[730px] text-center lg:text-left">We help companies build dynamic teams made up of top global talent. Using our network of passionate professionals we drive innovation and deliver incredible outcomes. Talented, diverse teams shape the best products and experiences. We’ll bring those teams to you.</p>
             </div>
         </div>
     </section>

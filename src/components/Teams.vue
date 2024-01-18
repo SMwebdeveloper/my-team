@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-deepJungleGreen pt-[88px] pb-[116px] md:pb-0 md:py-[100px] lg:py-[140px] relative before:z-10 before:absolute before:md:top-0 before:top-[-100px] before:left-0 before:w-[100px] before:h-[200px] before:bg-aboutIcon6 after:absolute after:bottom-0 after:right-0 after:h-[100px] after:w-[147px] after:bg-aboutIcon2 after:bg-no-repeat">
+  <section class="bg-deepJungleGreen pt-[88px] pb-[116px] md:py-[120px] lg:py-[140px] relative z-10 before:z-10 before:absolute before:md:top-0 before:top-[-100px] before:left-0 before:w-[100px] before:h-[200px] before:bg-aboutIcon6 after:absolute after:bottom-0 after:right-0 after:h-[100px] after:w-[147px] after:bg-aboutIcon2 after:bg-no-repeat">
     <div class="project-container">
       <h2 class="second-title text-center mb-12 lg:mb-16">
         Meet the directors
