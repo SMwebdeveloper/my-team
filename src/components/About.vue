@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-primaryColor pt-14 pb-[120px] relative before:absolute before:bottom-[-25%] before:sm:bottom-0 before:right-0 before:w-[100px] before:h-[200px] before:bg-aboutIcon7">
+    <section class="bg-primaryColor pt-14 pb-[120px] relative z-20 before:absolute before:bottom-0 before:right-0 before:w-[100px] before:h-[100px] before:md:h-[200px] before:bg-aboutIconMini7 before:md:bg-aboutIcon7  before:bg-no-repeat ">
         <div class="project-container  flex flex-col lg:flex-row items-center justify-center lg:items-start lg:justify-between ">
             <h2 class="text-[40px] md:text-[64px] font-bold leading-10 md:leading-[56px] lg:leading-[100px] text-white mb-4 md:mb-6 lg:mb-0">About</h2>
             <div>

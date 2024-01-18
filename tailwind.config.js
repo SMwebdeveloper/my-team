@@ -19,12 +19,14 @@ module.exports = {
         'aboutImage7': "url('@/assets/images/svg/about-icon-7.svg')",
         'headerCircle': "url('@/assets/images/svg/header-circle.svg')",
         'headerCircle2': "url('@/assets/images/svg/header-circle-2.svg')",
-        'aboutIcon9': "url('@/assets/images/svg/about-icon-9.svg')",
         'iconQuotes': "url('@/assets/images/cards/icon-quotes.png')",
         'aboutIcon2': "url('@/assets/images/svg/about-icon-2.svg')",
         'aboutIcon3': "url('@/assets/images/svg/about-icon-3.svg')",
         'aboutIcon4': "url('@/assets/images/svg/about-icon-4.svg')",
+        'aboutIcon6': "url('@/assets/images/svg/about-icon-6.svg')",
         'aboutIcon7': "url('@/assets/images/svg/about-icon-7.svg')",
+        'aboutIconMini7': "url('@/assets/images/svg/about-icon-mini-7.svg')",
+        'aboutIcon9': "url('@/assets/images/svg/about-icon-9.svg')",
       }
     },
     

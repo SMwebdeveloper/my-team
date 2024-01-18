@@ -1,11 +1,11 @@
 <template>
-  <section class="bg-deepJungleGreen py-[88px] md:py-[100px] lg:py-[140px]">
+  <section class="bg-deepJungleGreen pt-[88px] pb-[116px] md:pb-0 md:py-[100px] lg:py-[140px] relative before:z-10 before:absolute before:md:top-0 before:top-[-100px] before:left-0 before:w-[100px] before:h-[200px] before:bg-aboutIcon6 after:absolute after:bottom-0 after:right-0 after:h-[100px] after:w-[147px] after:bg-aboutIcon2 after:bg-no-repeat">
     <div class="project-container">
       <h2 class="second-title text-center mb-12 lg:mb-16">
         Meet the directors
       </h2>
       <div
-        class="flex items-start justify-center flex-wrap gap-y-6 md:gap-y-12 md:gap-x-[11px] lg:gap-x-[30px]"
+        class="flex items-start justify-center flex-wrap gap-y-12 md:gap-y-12 md:gap-x-[11px] lg:gap-x-[30px]"
       >
         <div
           class="w-[327px] h-[253px] md:w-[281px] lg:w-[350px] bg-darkGreen pt-8 px-6 pb-14 text-center relative"
@@ -22,7 +22,7 @@
             Founder & CEO
           </h6>
           <span
-            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-primaryLight text-4xl font-semibold text-darkGreen rotate-45 duration-200 hover:bg-raptureBlue"
+            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-primaryLight text-4xl font-semibold text-darkGreen rotate-45 duration-200 hover:bg-raptureBlue cursor-pointer"
             >&times;</span
           >
         </div>
@@ -42,7 +42,7 @@
             Co-founder & COO
           </h6>
           <span
-            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-primaryLight text-4xl font-semibold text-darkGreen rotate-45 duration-200 hover:bg-raptureBlue"
+            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-primaryLight text-4xl font-semibold text-darkGreen rotate-45 duration-200 hover:bg-raptureBlue cursor-pointer"
             >&times;</span
           >
         </div>
@@ -62,7 +62,7 @@
             Founder & CTO
           </h6>
           <span
-            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-primaryLight text-4xl font-semibold text-darkGreen rotate-45 duration-200 hover:bg-raptureBlue"
+            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-primaryLight text-4xl font-semibold text-darkGreen rotate-45 duration-200 hover:bg-raptureBlue cursor-pointer"
             >&times;</span
           >
         </div>
@@ -82,7 +82,7 @@
             Business Development Lead
           </h6>
           <span
-            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-primaryLight text-4xl font-semibold text-darkGreen rotate-45 duration-200 hover:bg-raptureBlue"
+            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-primaryLight text-4xl font-semibold text-darkGreen rotate-45 duration-200 hover:bg-raptureBlue cursor-pointer"
             >&times;</span
           >
         </div>
@@ -102,7 +102,7 @@
             Lead Marketing
           </h6>
           <span
-            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-primaryLight text-4xl font-semibold text-darkGreen rotate-45 duration-200 hover:bg-raptureBlue"
+            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-primaryLight text-4xl font-semibold text-darkGreen rotate-45 duration-200 hover:bg-raptureBlue cursor-pointer"
             >&times;</span
           >
         </div>
@@ -145,7 +145,7 @@
             </a>
           </div>
           <span
-            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-raptureBlue text-4xl font-semibold text-darkGreen duration-200 hover:bg-primaryLight"
+            class="block absolute bottom-[-25px] left-[43%] mx-auto w-[56px] h-[56px] rounded-full py-1 bg-raptureBlue text-4xl font-semibold text-darkGreen duration-200 hover:bg-primaryLight cursor-pointer"
             >&times;</span
           >
         </div>

@@ -13,7 +13,7 @@
       </button>
 
       <!-- Navigation -->
-      <div class="fixed z-20 top-0 left-0 w-full h-full transition-all duration-400 md:visible  md:relative md:w-[90%] md:bg-transparent " :class="`${ sidebar ? 'visible  bg-[rgba(0,0,0,0.50)]' : 'invisible delay-300'}`">
+      <div class="fixed z-50 top-0 left-0 w-full h-full transition-all duration-400 md:visible  md:relative md:w-[90%] md:bg-transparent " :class="`${ sidebar ? 'visible  bg-[rgba(0,0,0,0.50)]' : 'invisible delay-300'}`">
         <div
         class="absolute md:static top-0 transition-all duration-500 delay-100 ease-in-out  md:w-full h-full z-20 bg-policeBlue md:bg-transparent flex flex-col md:flex-row md:items-center md:justify-between w-[255px]  pt-5 md:pt-0 px-8 md:px-0  lg:right-[0] before:absolute before:right-0 before:bottom-0   before:h-[200px] before:w-24 before:bg-aboutImage7 md:before:hidden" :class="`${sidebar ? 'right-0 ' : 'right-[-100%]'}`"
       >
