@@ -22,6 +22,7 @@ body {
 .header-title {
   @apply text-[40px] md:text-6xl lg:text-8xl leading-10 md:leading-[56px] lg:leading-[100px] text-white font-bold text-center lg:text-left;
 }
+
 .header-subtitle {
   @apply text-base text-white lg:text-lg font-semibold text-center lg:text-left;
 }
