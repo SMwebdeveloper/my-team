@@ -5,7 +5,7 @@
         Meet the directors
       </h2>
       <div
-        class="flex items-start justify-center flex-wrap gap-y-12 md:gap-y-12 md:gap-x-[11px] lg:gap-x-[30px]"
+        class="flex items-start justify-center flex-wrap gap-y-12 sm:gap-x-4 md:gap-y-12 md:gap-x-[11px] lg:gap-x-[30px]"
       >
         <div
           class="w-[327px] h-[253px] md:w-[281px] lg:w-[350px] bg-darkGreen pt-8 px-6 pb-14 text-center relative"
