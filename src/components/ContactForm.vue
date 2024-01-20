@@ -1,41 +1,147 @@
 <template>
-    
-
-<form class="max-w-md mx-auto">
-  
-  <div class="relative z-0 w-full mb-5 group">
-      <input type="password" name="floating_password" id="floating_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-      <label for="floating_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Password</label>
-  </div>
-  <div class="relative z-0 w-full mb-5 group">
-      <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-      <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
-  </div>
-  <div class="relative z-0 w-full mb-5 group">
-      <input type="password" name="repeat_password" id="floating_repeat_password" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-      <label for="floating_repeat_password" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Confirm password</label>
-  </div>
-  <div class="grid md:grid-cols-2 md:gap-6">
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+  <form @submit.prevent="addContact" class="w-full sm:w-[542px] lg:w-1/2 mx-auto">
+    <div class="relative z-0 w-full mb-6 group">
+      <input
+        v-model="contact.name"
+        type="text"
+        class="block pt-2.5 pb-4 px-2 w-full text-[15px] font-semibold text-white bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-raptureBlue placeholder:text-[15px] placeholder:font-semibold placeholder:text-white placeholder:opacity-[0.6]"
+        :class="{
+          'placeholder:text-primaryLight border-primaryLight':
+            errMessage.errorName,
+        }"
+        placeholder="Name"
+      />
+      <span
+        v-if="errMessage.errorName"
+        class="text-[10px] font-bold text-primaryLight italic"
+        >This field is required</span
+      >
     </div>
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+    <div class="relative z-0 w-full mb-6 group">
+      <input
+        v-model="contact.email"
+        type="email"
+        class="block pt-2.5 pb-4 px-2 w-full text-[15px] font-semibold text-white bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-raptureBlue placeholder:text-[15px] placeholder:font-semibold placeholder:text-white placeholder:opacity-[0.6]"
+        :class="{
+          'placeholder:text-primaryLight border-primaryLight':
+            errMessage.errorEmail,
+        }"
+        placeholder="Email"
+      />
+      <span
+        v-if="errMessage.errorEmail"
+        class="text-[10px] font-bold text-primaryLight italic"
+        >This field is required</span
+      >
     </div>
-  </div>
-  <div class="grid md:grid-cols-2 md:gap-6">
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+    <div class="relative z-0 w-full mb-6 group">
+      <input
+        v-model="contact.companyName"
+        type="text"
+        class="block pt-2.5 pb-4 px-2 w-full text-[15px] font-semibold text-white bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-raptureBlue placeholder:text-[15px] placeholder:font-semibold placeholder:text-white placeholder:opacity-[0.6]"
+        :class="{
+          'placeholder:text-primaryLight border-primaryLight':
+            errMessage.errorCompanyName,
+        }"
+        placeholder="Company Name"
+      />
+      <span
+        v-if="errMessage.errorCompanyName"
+        class="text-[10px] font-bold text-primaryLight italic"
+        >This field is required</span
+      >
     </div>
-    <div class="relative z-0 w-full mb-5 group">
-        <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-        <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
+    <div class="relative z-0 w-full mb-6 group">
+      <input
+        v-model="contact.title"
+        type="text"
+        class="block pt-2.5 pb-4 px-2 w-full text-[15px] font-semibold text-white bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-raptureBlue placeholder:text-[15px] placeholder:font-semibold placeholder:text-white placeholder:opacity-[0.6]"
+        :class="{
+          'placeholder:text-primaryLight border-primaryLight':
+            errMessage.errorTitle,
+        }"
+        placeholder="Title"
+      />
+      <span
+        v-if="errMessage.errorTitle"
+        class="text-[10px] font-bold text-primaryLight italic"
+        >This field is required</span
+      >
     </div>
-  </div>
-  <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-</form>
-
+    <div class="relative z-0 w-full mb-6 group">
+      <textarea
+        v-model="contact.message"
+        type="text"
+        class="block pt-2.5 pb-4 px-2 w-full min-h-[100px] text-[15px] font-semibold text-white bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-raptureBlue placeholder:text-[15px] placeholder:font-semibold placeholder:text-white placeholder:opacity-[0.6]"
+        :class="{
+          'placeholder:text-primaryLight border-primaryLight':
+            errMessage.errorMessage,
+        }"
+        placeholder="Message"
+      ></textarea>
+      <span
+        v-if="errMessage.errorMessage"
+        class="text-[10px] font-bold text-primaryLight italic"
+        >This field is required</span
+      >
+    </div>
+    <button
+      type="submit"
+      class="text-primaryColor bg-white hover:bg-primaryColor hover:text-white duration-150 border-2 border-white focus:ring-4 focus:outline-none focus:ring-white focus:bg-primaryColor focus:text-white font-semibold rounded-3xl text-[18px]  sm:w-auto px-5 py-2.5 text-center"
+    >
+      submit
+    </button>
+  </form>
 </template>
+<script setup>
+import { ref } from "vue";
+
+const contact = ref({
+  name: "",
+  email: "",
+  companyName: "",
+  title: "",
+  message: "",
+});
+const errMessage = ref({
+  errorName: false,
+  errorEmail: false,
+  errorCompanyName: false,
+  errorTitle: false,
+  errorMessage: false,
+});
+const addContact = () => {
+  const { name, email, companyName, title, message } = contact.value;
+  if (companyName && email && message && name && title) {
+    console.log("add");
+    name = "";
+    email = "";
+    companyName = "";
+    title = "";
+    message = "";
+  } else {
+    if (name === "") {
+      errMessage.value.errorName = true;
+    }
+    if (email === "") {
+      errMessage.value.errorEmail = true;
+    }
+    if (companyName === "") {
+      errMessage.value.errorCompanyName = true;
+    }
+    if (title === "") {
+      errMessage.value.errorTitle = true;
+    }
+    if (message === "") {
+      errMessage.value.errorMessage = true;
+    }
+  }
+  setTimeout(() => {
+    errMessage.value.errorName = false;
+    errMessage.value.errorEmail = false;
+    errMessage.value.errorMessage = false;
+    errMessage.value.errorTitle = false;
+    errMessage.value.errorCompanyName = false;
+  }, 3000);
+};
+</script>

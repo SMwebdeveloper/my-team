@@ -27,6 +27,7 @@ module.exports = {
         'aboutIcon6': "url('@/assets/images/svg/about-icon-6.svg')",
         'aboutIcon7': "url('@/assets/images/svg/about-icon-7.svg')",
         'aboutIconMini7': "url('@/assets/images/svg/about-icon-mini-7.svg')",
+        'aboutIcon8': "url('@/assets/images/svg/about-icon-8.svg')",
         'aboutIcon9': "url('@/assets/images/svg/about-icon-9.svg')",
       }
     },
