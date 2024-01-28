@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <home-hero/>
-        <offer/>
-        <stories/>
-        <get-contact/>
+    <div class="snap-y snap-mandatory h-screen w-screen overflow-y-scroll">
+        <home-hero class="snap-start"/>
+        <offer class="snap-start"/>
+        <stories class="snap-start"/>
+        <get-contact class="snap-start"/>
     </div>
 </template>
 <script setup>

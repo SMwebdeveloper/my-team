@@ -15,6 +15,12 @@
 <script setup>
 import Navbar from "./components/Navbar.vue";
 import AppFooter from "./components/AppFooter.vue";
+import { onMounted } from "vue";
+import AOS from 'aos'
+
+onMounted(() => {
+  AOS.init()
+})
 </script>
 
 <style>
