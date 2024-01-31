@@ -3,7 +3,7 @@
     <div class="project-container  md:pl-24 flex flex-col lg:flex-row items-start justify-between ">
       <div class="mb-14 md:mb-16 lg:mb-0">
         <span class="inline-block bg-primaryLight w-12 h-1 mb-8 lg:mb-14"></span>
-        <h2 class="second-title w-[230px] sm:w-[270px] md:w-[445px]">
+        <h2 v-motion :initial="{scale:0}" :visibleOnce="{scale:1}" :duration="800" class="second-title w-[230px] sm:w-[270px] md:w-[445px]">
           Build & manage distributed teams like no one else.
         </h2>
       </div>

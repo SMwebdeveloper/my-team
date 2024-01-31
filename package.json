@@ -12,6 +12,8 @@
     "@vueuse/motion": "^2.0.0",
     "aos": "^2.3.4",
     "framer-motion": "^11.0.3",
+    "tailwindcss-animated": "^1.0.1",
+    "taos": "^1.0.5",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },

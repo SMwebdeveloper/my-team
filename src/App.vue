@@ -3,7 +3,7 @@
     <navbar />
   <main>
     <router-view v-slot="{Component}">
-      <transition name="slide" made="out-in" :duration="550">
+      <transition name="route" made="out-in" :duration="500">
         <Component :is="Component"/>
       </transition>
     </router-view>
@@ -27,13 +27,18 @@ onMounted(() => {
 main {
   will-change: transform, opacity;
 }
-.slide-enter-from,
-.slide-leave-to {
+.route-enter-from {
   opacity: 0;
-  transform: translatey(300px);
+  transform: translateX(100px);
 }
-.slide-enter-active,
-.slide-leave-active {
-  transition: 0.3s ease-out;
+.route-enter-active {
+  transition: all 0.3s ease-out;
+}
+.route-leave-to {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+.route-leave-active {
+  transition: all 0.3s ease-in;
 }
 </style>
