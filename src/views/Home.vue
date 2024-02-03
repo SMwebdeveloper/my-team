@@ -1,9 +1,9 @@
 <template>
     <div>
-        <home-hero/>
-        <offer/>
-        <stories/>
-        <get-contact/>
+        <home-hero />
+        <offer />
+        <stories />
+        <get-contact />
     </div>
 </template>
 <script setup>

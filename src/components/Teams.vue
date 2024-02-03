@@ -1,13 +1,16 @@
 <template>
   <section class="bg-deepJungleGreen pt-[88px] pb-[116px] md:py-[120px] lg:py-[140px] relative z-10 before:z-10 before:absolute before:md:top-0 before:top-[-100px] before:left-0 before:w-[100px] before:h-[200px] before:bg-aboutIcon6 after:absolute after:bottom-0 after:right-0 after:h-[100px] after:w-[147px] after:bg-aboutIcon2 after:bg-no-repeat">
     <div class="project-container">
-      <h2 class="second-title text-center mb-12 lg:mb-16">
+      <h2 v-motion :initial="{opacity:0, scale:0.5}" :visibleOnce="{opacity:1, scale:1, transition: {duration:500}}" class="second-title text-center mb-12 lg:mb-16">
         Meet the directors
       </h2>
       <div
         class="flex items-start justify-center flex-wrap gap-y-12 sm:gap-x-4 md:gap-y-12 md:gap-x-[11px] lg:gap-x-[30px]"
       >
         <div
+         v-motion
+         :initial="{opacity:0, y:100, scale:0.5}"
+         :visibleOnce="{opacity:1, y:0, scale:1, transition:{duration:600, delay:300}}"
           class="w-[327px] h-[253px] md:w-[281px] lg:w-[350px] bg-darkGreen pt-8 px-6 pb-14 text-center relative"
         >
           <img
@@ -28,6 +31,9 @@
         </div>
 
         <div
+        v-motion
+         :initial="{opacity:0, y:100, scale:0.5}"
+         :visibleOnce="{opacity:1, y:0, scale:1, transition:{duration:600, delay:500}}"
           class="w-[327px] h-[253px] md:w-[281px] lg:w-[350px] bg-darkGreen pt-8 px-6 pb-14 text-center relative"
         >
           <img
@@ -48,6 +54,9 @@
         </div>
 
         <div
+        v-motion
+         :initial="{opacity:0, y:100, scale:0.5}"
+         :visibleOnce="{opacity:1, y:0, scale:1, transition:{duration:600, delay:700}}"
           class="w-[327px] h-[253px] md:w-[281px] lg:w-[350px] bg-darkGreen pt-8 px-6 pb-14 text-center relative"
         >
           <img
@@ -68,6 +77,9 @@
         </div>
 
         <div
+        v-motion
+         :initial="{opacity:0, y:100, scale:0.5}"
+         :visibleOnce="{opacity:1, y:0, scale:1, transition:{duration:600, delay:300}}"
           class="w-[327px] h-[253px] md:w-[281px] lg:w-[350px] bg-darkGreen pt-8 px-6 pb-14 text-center relative"
         >
           <img
@@ -88,6 +100,9 @@
         </div>
 
         <div
+        v-motion
+         :initial="{opacity:0, y:100, scale:0.5}"
+         :visibleOnce="{opacity:1, y:0, scale:1, transition:{duration:600, delay:500}}"
           class="w-[327px] h-[253px] md:w-[281px] lg:w-[350px] bg-darkGreen pt-8 px-6 pb-14 text-center relative"
         >
           <img
@@ -107,6 +122,9 @@
           >
         </div>
         <div
+        v-motion
+         :initial="{opacity:0, y:100, scale:0.5}"
+         :visibleOnce="{opacity:1, y:0, scale:1, transition:{duration:600, delay:700}}"
           class="w-[327px] h-[253px] md:w-[281px] lg:w-[350px] bg-darkGreen pt-8 px-6 pb-14 text-center relative"
         >
           <h4 class="text-[18px] font-bold text-raptureBlue leading-7 mb-2">

@@ -1,7 +1,18 @@
 <template>
-  <form @submit.prevent="addContact" class="w-full sm:w-[542px] lg:w-1/2 mx-auto">
-    <div class="relative z-0 w-full mb-6 group">
+  <form
+    @submit.prevent="addContact"
+    class="w-full sm:w-[542px] lg:w-1/2 mx-auto"
+  >
+    <div class="relative w-full mb-6 group">
       <input
+        v-motion
+        :initial="{ opacity: 0, y: 100, scaleZ: -3 }"
+        :visibleOnce="{
+          opacity: 1,
+          y: 0,
+          scaleZ: 1,
+          transition: { duration: 500, delay: 1500 },
+        }"
         v-model="contact.name"
         type="text"
         class="block pt-2.5 pb-4 px-2 w-full text-[15px] font-semibold text-white bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-raptureBlue placeholder:text-[15px] placeholder:font-semibold placeholder:text-white placeholder:opacity-[0.6]"
@@ -17,8 +28,16 @@
         >This field is required</span
       >
     </div>
-    <div class="relative z-0 w-full mb-6 group">
+    <div class="relative w-full mb-6 group">
       <input
+        v-motion
+        :initial="{ opacity: 0, y: 100, scaleZ: -3 }"
+        :visibleOnce="{
+          opacity: 1,
+          y: 0,
+          scaleZ: 1,
+          transition: { duration: 500, delay: 1800 },
+        }"
         v-model="contact.email"
         type="email"
         class="block pt-2.5 pb-4 px-2 w-full text-[15px] font-semibold text-white bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-raptureBlue placeholder:text-[15px] placeholder:font-semibold placeholder:text-white placeholder:opacity-[0.6]"
@@ -34,8 +53,16 @@
         >This field is required</span
       >
     </div>
-    <div class="relative z-0 w-full mb-6 group">
+    <div class="relative w-full mb-6 group">
       <input
+        v-motion
+        :initial="{ opacity: 0, y: 100, scaleZ: -3 }"
+        :visibleOnce="{
+          opacity: 1,
+          y: 0,
+          scaleZ: 1,
+          transition: { duration: 500, delay: 2100 },
+        }"
         v-model="contact.companyName"
         type="text"
         class="block pt-2.5 pb-4 px-2 w-full text-[15px] font-semibold text-white bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-raptureBlue placeholder:text-[15px] placeholder:font-semibold placeholder:text-white placeholder:opacity-[0.6]"
@@ -51,8 +78,16 @@
         >This field is required</span
       >
     </div>
-    <div class="relative z-0 w-full mb-6 group">
+    <div class="relative w-full mb-6 group">
       <input
+        v-motion
+        :initial="{ opacity: 0, y: 100, scaleZ: -3 }"
+        :visibleOnce="{
+          opacity: 1,
+          y: 0,
+          scaleZ: 1,
+          transition: { duration: 500, delay: 2400 },
+        }"
         v-model="contact.title"
         type="text"
         class="block pt-2.5 pb-4 px-2 w-full text-[15px] font-semibold text-white bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-raptureBlue placeholder:text-[15px] placeholder:font-semibold placeholder:text-white placeholder:opacity-[0.6]"
@@ -68,8 +103,16 @@
         >This field is required</span
       >
     </div>
-    <div class="relative z-0 w-full mb-6 group">
+    <div class="relative w-full mb-6 group">
       <textarea
+        v-motion
+        :initial="{ opacity: 0, y: 100, scaleZ: -3 }"
+        :visibleOnce="{
+          opacity: 1,
+          y: 0,
+          scaleZ: 1,
+          transition: { duration: 500, delay: 2700 },
+        }"
         v-model="contact.message"
         type="text"
         class="block pt-2.5 pb-4 px-2 w-full min-h-[100px] text-[15px] font-semibold text-white bg-transparent border-0 border-b border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-raptureBlue placeholder:text-[15px] placeholder:font-semibold placeholder:text-white placeholder:opacity-[0.6]"
@@ -86,8 +129,15 @@
       >
     </div>
     <button
+      v-motion
+      :initial="{ opacity: 0, scaleZ: -3 }"
+      :visibleOnce="{
+        opacity: 1,
+        scaleZ: 1,
+        transition: { duration: 500, delay: 2900 },
+      }"
       type="submit"
-      class="text-primaryColor bg-white hover:bg-primaryColor hover:text-white duration-150 border-2 border-white focus:ring-4 focus:outline-none focus:ring-white focus:bg-primaryColor focus:text-white font-semibold rounded-3xl text-[18px]  sm:w-auto px-5 py-2.5 text-center"
+      class="text-primaryColor bg-white hover:bg-primaryColor hover:text-white duration-150 border-2 border-white focus:ring-4 focus:outline-none focus:ring-white focus:bg-primaryColor focus:text-white font-semibold rounded-3xl text-[18px] sm:w-auto px-5 py-2.5 text-center"
     >
       submit
     </button>
@@ -120,21 +170,21 @@ const addContact = () => {
     title = "";
     message = "";
   } else {
-    if (name === "") {
-      errMessage.value.errorName = true;
-    }
-    if (email === "") {
-      errMessage.value.errorEmail = true;
-    }
-    if (companyName === "") {
-      errMessage.value.errorCompanyName = true;
-    }
-    if (title === "") {
-      errMessage.value.errorTitle = true;
-    }
-    if (message === "") {
-      errMessage.value.errorMessage = true;
-    }
+    name === ""
+      ? (errMessage.value.errorName = true)
+      : (errMessage.value.errorName = false);
+    email === ""
+      ? (errMessage.value.errorEmail = true)
+      : (errMessage.value.errorEmail = false);
+    companyName === ""
+      ? (errMessage.value.errorCompanyName = true)
+      : (errMessage.value.errorCompanyName = false);
+    title === ""
+      ? (errMessage.value.errorTitle = true)
+      : (errMessage.value.errorTitle = false);
+    message === ""
+      ? (errMessage.value.errorMessage = true)
+      : (errMessage.value.errorMessage = false);
   }
   setTimeout(() => {
     errMessage.value.errorName = false;

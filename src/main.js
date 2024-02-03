@@ -1,11 +1,15 @@
-import './main.css'
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./router/router";
+// import transition from "./transition";
+import {MotionPlugin} from '@vueuse/motion'
+import "./main.css";
+import "aos/dist/aos.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router/router'
+const app = createApp(App);
 
-const app = createApp(App)
 
-app.use(router)
 
-app.mount('#app')
+app.use(router).use(MotionPlugin);
+
+app.mount("#app");

@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-darkGreen py-12 relative z-10">
     <div class="project-container flex flex-col md:flex-wrap md:flex-row  items-center justify-center md:items-start md:justify-between">
-      <div class="w-auto md:w-1/2 lg:w-auto md:mr-36 mb-4 md:mb-0">
+      <div v-motion :initial="{opacity:0, y:-100}" :visibleOnce="{opacity:1, y:0, transition:{duration:500, delay:900}}" class="w-auto md:w-1/2 lg:w-auto md:mr-36 mb-4 md:mb-0">
         <img src="@/assets/images/svg/logo.svg" alt="site logo" class="mb-4 md:mb-6 w-24 md:w-40 mx-auto md:mx-0 md:mr-auto"/>
         <nav
           class="flex items-center justify-center sm:justify-start md:flex-1 text-white text-[18px] font-semibold"
@@ -22,13 +22,13 @@
           </a>
         </nav>
       </div>
-      <ul class="w-auto mb-4 md:mb-0 md:w-1/2 lg:w-auto sm:flex-1 text-center md:text-right lg:text-left text-base text-slate-300 font-medium">
+      <ul v-motion :initial="{opacity:0, y:-100}" :visibleOnce="{opacity:1, y:0, transition:{duration:500, delay:700}}" class="w-auto mb-4 md:mb-0 md:w-1/2 lg:w-auto sm:flex-1 text-center md:text-right lg:text-left text-base text-slate-300 font-medium">
         <li class="mb-1">987 Hillcrest Lane</li>
         <li class="mb-1">Irvine, CA</li>
         <li class="mb-1">California 92714</li>
         <li>Call Us : 949-833-7432</li>
       </ul>
-      <div class="w-auto md:w-full lg:w-auto flex flex-col md:flex-row md:items-center md:justify-between lg:flex-col md:mt-6 lg:mt-0">
+      <div v-motion :initial="{opacity:0, y:-100}" :visibleOnce="{opacity:1, y:0, transition:{duration:500, delay:500}}" class="w-auto md:w-full lg:w-auto flex flex-col md:flex-row md:items-center md:justify-between lg:flex-col md:mt-6 lg:mt-0">
         <ul class="mx-auto md:mx-0 lg:ml-auto w-[104px] flex items-end mb-3 lg:mb-[51px] ">
           <li class="mr-3">
             <a href="#">

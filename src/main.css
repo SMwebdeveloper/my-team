@@ -16,7 +16,7 @@ body {
 }
 
 .project-container {
-  @apply max-w-[1220px] px-5 md:px-7 lg:px-12 xl:px-14 mx-auto;
+  @apply max-w-[1220px] px-5 md:px-7 lg:px-12 mx-auto;
 }
 
 .header-title {
@@ -32,4 +32,25 @@ body {
 
 .description {
   @apply text-base text-white font-semibold leading-6;
+}
+
+
+.slide-in {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f0f0f;
+  transform-origin:bottom;
+}
+
+.slide-out {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0f0f0f;
+  transform-origin:bottom;
 }
