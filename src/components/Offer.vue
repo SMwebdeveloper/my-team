@@ -8,7 +8,7 @@
       <div
         v-motion
         :initial="{ opacity: 0, x: -100 }"
-        :visible="{
+        :visibleOnce="{
           x: 0,
           opacity: 1,
           transition: {
@@ -24,23 +24,8 @@
           Build & manage distributed teams like no one else.
         </h2>
       </div>
-      <ul
-        v-motion
-        :initial="{ opacity: 0, y: -100 }"
-        :visible="{
-          opacity: 1,
-          y: 0,
-          transition: {
-            type: 'spring',
-            stiffness: 250,
-            damping: 25,
-            mass: 0.5,
-            delay: 300,
-            duration: 600,
-          },
-        }"
-      >
-        <li class="flex flex-col md:flex-row items-start mb-12 md:mb-8">
+      <ul>
+        <li v-motion :initial="{opacity:0, scaleZ:-3, x:100}" :visibleOnce="{opacity:1, scaleZ:1, x:0, transition:{duration:600, delay:300}}" class="flex flex-col md:flex-row items-start mb-12 md:mb-8">
           <img
             src="@/assets/images/cards/cards-1.png"
             alt="card first image"
@@ -58,7 +43,7 @@
             </p>
           </div>
         </li>
-        <li class="flex flex-col md:flex-row items-start mb-12 md:mb-8">
+        <li v-motion :initial="{opacity:0, scaleZ:-3, x:100}" :visibleOnce="{opacity:1, scaleZ:1, x:0, transition:{duration:600, delay:500}}" class="flex flex-col md:flex-row items-start mb-12 md:mb-8">
           <img
             src="@/assets/images/cards/cards-2.png"
             alt="card second image"
@@ -76,7 +61,7 @@
             </p>
           </div>
         </li>
-        <li class="flex flex-col md:flex-row items-start mb-12 md:mb-8">
+        <li v-motion :initial="{opacity:0, scaleZ:-3, x:100}" :visibleOnce="{opacity:1, scaleZ:1, x:0, transition:{duration:600, delay:700}}" class="flex flex-col md:flex-row items-start mb-12 md:mb-8">
           <img
             src="@/assets/images/cards/cards-3.png"
             alt="card third image"

@@ -1,5 +1,5 @@
 <template>
-  <div class="!scroll-smooth bg-primaryColor">
+  <div class="!scroll-smooth bg-primaryColor overflow-x-hidden">
     <navbar />
   <main>
     <router-view v-slot="{Component}">

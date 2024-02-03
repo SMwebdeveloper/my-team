@@ -6,7 +6,7 @@
       <h2
         v-motion
         :initial="{opacity:0}"
-        :visible="{opacity:1, transition:{duration:600,delay:800}}"
+        :visibleOnce="{opacity:1, transition:{duration:600,delay:200}}"
         class="second-title w-[327px] md:w-[573px] lg:w-[932px] mb-12 lg:mb-14 mx-auto text-center"
       >
         Delivering real results for top companies. Some of our
@@ -16,7 +16,7 @@
         <div
           v-motion
           :initial="{ opacity: 0, y: 100 }"
-          :visible="{
+          :visibleOnce="{
             opacity: 1,
             y: 0,
             transition: {
@@ -50,7 +50,7 @@
         <div
           v-motion
           :initial="{ opacity: 0, y: 100 }"
-          :visible="{
+          :visibleOnce="{
             opacity: 1,
             y: 0,
             transition: {
@@ -84,7 +84,7 @@
         <div
           v-motion
           :initial="{ opacity: 0, y: 100 }"
-          :visible="{
+          :visibleOnce="{
             opacity: 1,
             y: 0,
             transition: {
