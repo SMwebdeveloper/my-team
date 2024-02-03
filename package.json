@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "tailwindBuild": "tailwindcss build -i src/main.css -o public/styles.css --watch",
     "build": "vite build",
     "preview": "vite preview"
   },
