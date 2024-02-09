@@ -8,7 +8,7 @@
       <h2
         v-motion
         :initial="{ opacity: 0, y:-100 }"
-        :visibleOnce="{ opacity: 1, y:0, transition: { duration: 400} }"
+        :enter="{ opacity: 1, y:0, transition: { duration: 400} }"
         class="max-w-[635px] header-title mb-5 md:mb-6 lg:mb-0"
       >
         Find the <br />
