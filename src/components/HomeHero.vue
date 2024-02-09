@@ -4,8 +4,8 @@
   >
     <div
       v-motion
-      :initial="{opacity:0, y:100}"
-      :visibleOnce="{opacity:1,y:0, transition:{duration:400, delay:200}}"
+      :initial="{opacity:0, y:-100}"
+      :visibleOnce="{opacity:1, y:0,transition:{duration:400, delay:300}}"
       class="project-container flex flex-col pb-48 md:pb-64 lg:pb-72 lg:flex-row items-center justify-center lg:items-center lg:justify-between relative after:absolute after:bottom-[-100px] after:lg:right-0 after:w-[358px] after:h-[200px] after:bg-headerCircle2 after:bg-no-repeat"
     >
       <h2 class="max-w-[635px] header-title mb-5 md:mb-6 lg:mb-0">
