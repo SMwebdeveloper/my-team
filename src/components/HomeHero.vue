@@ -1,3 +1,4 @@
+
 <template>
   <section
     class="bg-primaryColor pt-10 md:pt-20 relative before:hidden before:lg:inline-block before:absolute before:top-[80px] before:left-0 before:w-[100px] before:h-[200px] before:bg-headerCircle before:bg-no-repeat before:bg-contain"
@@ -8,7 +9,7 @@
       <h2
         v-motion
         :initial="{ opacity: 0, y:-100 }"
-        :enter="{ opacity: 1, y:0, transition: { duration: 400} }"
+        :enter="{ opacity: 1, y:0, transition: { duration: 400, delay:300} }"
         class="max-w-[635px] header-title mb-5 md:mb-6 lg:mb-0"
       >
         Find the <br />
@@ -16,7 +17,7 @@
       </h2>
       <div v-motion
         :initial="{ opacity: 0, x:100}"
-        :enter="{ opacity: 1, x:0, transition: { duration: 400,  } }"
+        :enter="{ opacity: 1, x:0, transition: { duration: 400, delay:500  } }"
         class="max-w-[445px] lg:h-[195px] lg:flex lg:flex-col items-start justify-between"
       >
         <span class="hidden lg:inline-block bg-raptureBlue w-12 h-1"></span>
