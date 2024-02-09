@@ -16,7 +16,7 @@
       </h2>
       <div v-motion
         :initial="{ opacity: 0, x:100}"
-        :visibleOnce="{ opacity: 1, x:0, transition: { duration: 400,  } }"
+        :enter="{ opacity: 1, x:0, transition: { duration: 400,  } }"
         class="max-w-[445px] lg:h-[195px] lg:flex lg:flex-col items-start justify-between"
       >
         <span class="hidden lg:inline-block bg-raptureBlue w-12 h-1"></span>
